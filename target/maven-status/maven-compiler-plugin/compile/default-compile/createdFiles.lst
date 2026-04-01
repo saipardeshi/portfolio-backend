@@ -8,6 +8,7 @@ com\portfolio\config\SecurityConfig.class
 com\portfolio\repository\PortfolioRepository.class
 com\portfolio\model\Portfolio$ContactInfo.class
 com\portfolio\model\Portfolio$Experience.class
+com\portfolio\config\CorsFilter.class
 com\portfolio\model\Portfolio$AboutSection.class
 com\portfolio\model\AdminUser.class
 com\portfolio\model\Portfolio$Certificate.class

@@ -68,7 +68,17 @@ public class SecurityConfig {
 
         System.out.println(">>> CORS Allowed Origins: " + origins); // debug log
 
+        // ✅ Exact origins from env var (production + localhost)
         config.setAllowedOrigins(origins);
+
+        // ✅ Wildcard patterns — covers ALL Vercel preview URLs automatically
+        // e.g. portfolio-frontend-git-main-saipardeshis-projects.vercel.app
+        config.setAllowedOriginPatterns(List.of(
+                "https://portfolio-frontend-*.vercel.app",
+                "https://*-saipardeshis-projects.vercel.app",
+                "http://localhost:*"  // ✅ covers any localhost port during dev
+        ));
+
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         config.setExposedHeaders(List.of("Authorization"));

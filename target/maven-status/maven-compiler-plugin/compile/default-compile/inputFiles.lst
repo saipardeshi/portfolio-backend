@@ -6,6 +6,7 @@ C:\Users\Sai\OneDrive\Desktop\Portfolio\portfolio-backend\portfolio-backend\src\
 C:\Users\Sai\OneDrive\Desktop\Portfolio\portfolio-backend\portfolio-backend\src\main\java\com\portfolio\model\AdminUser.java
 C:\Users\Sai\OneDrive\Desktop\Portfolio\portfolio-backend\portfolio-backend\src\main\java\com\portfolio\config\SecurityConfig.java
 C:\Users\Sai\OneDrive\Desktop\Portfolio\portfolio-backend\portfolio-backend\src\main\java\com\portfolio\config\DataInitializer.java
+C:\Users\Sai\OneDrive\Desktop\Portfolio\portfolio-backend\portfolio-backend\src\main\java\com\portfolio\config\CorsFilter.java
 C:\Users\Sai\OneDrive\Desktop\Portfolio\portfolio-backend\portfolio-backend\src\main\java\com\portfolio\PortfolioBackendApplication.java
 C:\Users\Sai\OneDrive\Desktop\Portfolio\portfolio-backend\portfolio-backend\src\main\java\com\portfolio\controller\PortfolioController.java
 C:\Users\Sai\OneDrive\Desktop\Portfolio\portfolio-backend\portfolio-backend\src\main\java\com\portfolio\security\JwtAuthFilter.java
