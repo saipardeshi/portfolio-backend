@@ -21,4 +21,4 @@ COPY --from=builder /app/target/*.jar app.jar
 
 # Use Render's dynamic PORT
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "-Dserver.port=${PORT:-8080}", "app.jar"]
+ENTRYPOINT ["sh", "-c", "java -jar -Dserver.port=${PORT:-8080} app.jar"]
