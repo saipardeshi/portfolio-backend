@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 public class PortfolioController {
@@ -58,5 +59,9 @@ public class PortfolioController {
     @PutMapping("/api/admin/portfolio/contact")
     public ResponseEntity<Portfolio> updateContact(@RequestBody Portfolio.ContactInfo contact) {
         return ResponseEntity.ok(portfolioService.updateContact(contact));
+    }
+    @GetMapping("/health")
+    public ResponseEntity<Map<String, String>> healthCheck() {
+        return ResponseEntity.ok(Map.of("status", "ok"));
     }
 }
